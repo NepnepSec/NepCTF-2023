@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  lic:
+    build: .
+    container_name: lic
+    tty: true
+    restart: always
+    ports:
+      - "10003:8081"
+    environment:
+      - "GZCTF_FLAG=NepCTF{testflag-test-test-test-TEST}"
